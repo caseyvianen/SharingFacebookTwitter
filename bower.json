@@ -1,0 +1,25 @@
+{
+  "name": "facebooktwittersharing",
+  "authors": [
+    "caseyvianen <c.vianen@mondriaanict.nl>"
+  ],
+  "description": "Share twitter and Facebook with a callback function and given parameters",
+  "main": "dist/sharing.facebooktwitter.js",
+  "moduleType": [],
+  "keywords": [
+    "Sharing",
+    "AngularJS",
+    "Directive",
+    "Facebook",
+    "Twitter"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/caseyvianen/SharingFacebookTwitter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
