@@ -5,8 +5,9 @@ angular.module("sharing.facebooktwitter",[])
             restrict: "E",
             scope: {
                 tweetText: '@text',
-                callback: '&callback'
-
+                callback: '&callback',
+                hashtags: "@hashtags",
+                url:'@text'
             },
             link: function(scope, element) {
                 window.twttr = (function(d, s, id) {
@@ -30,10 +31,10 @@ angular.module("sharing.facebooktwitter",[])
 
                     });
                     twttr.widgets.createShareButton(
-                        'http://www.iamprogrez.com/products/iam-it/',
+                        scope.url,
                         document.getElementById('container'), {
                             text: scope.tweetText,
-                            hashtags: "iamprogrez,iam-it",
+                            hashtags:scope.hashtags,
                         });
                 });
 
@@ -44,7 +45,7 @@ angular.module("sharing.facebooktwitter",[])
 .directive('facebookButton', function($q) {
     window.fbAsyncInit = function() {
         FB.init({
-            appId: '1535286526768732',
+            appId: scope.appId,
             xfbml: true,
             version: 'v2.5'
         });
@@ -65,9 +66,11 @@ angular.module("sharing.facebooktwitter",[])
     return {
         restric: "E",
         scope: {
+            urlink:'@text',
             facebookText: '@text',
             facebookPicture: '@picture',
             callback: '&callback'
+            appId: '@id'
         },
         link: function(scope, element) {
             element[0].addEventListener('click', function(e) {
@@ -75,7 +78,7 @@ angular.module("sharing.facebooktwitter",[])
                FB.ui(
                 {
                   method: 'feed',
-                  link:'http://www.iamprogrez.com/products/iam-it/',
+                  link:scope.urlink,
                   description:scope.facebookText,
                   picture:scope.facebookPicture,
 
