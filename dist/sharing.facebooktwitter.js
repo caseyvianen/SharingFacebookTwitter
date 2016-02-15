@@ -7,7 +7,7 @@ angular.module("sharing.facebooktwitter",[])
                 tweetText: '@text',
                 callback: '&callback',
                 hashtags: "@hashtags",
-                url:'@text'
+                url:'@urltext'
             },
             link: function(scope, element) {
                 window.twttr = (function(d, s, id) {
@@ -66,7 +66,7 @@ angular.module("sharing.facebooktwitter",[])
     return {
         restric: "E",
         scope: {
-            urlink:'@text',
+            urlink:'@url',
             facebookText: '@text',
             facebookPicture: '@picture',
             callback: '&callback'
