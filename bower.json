@@ -4,7 +4,7 @@
     "caseyvianen <c.vianen@mondriaanict.nl>"
   ],
   "description": "Share twitter and Facebook with a callback function and given parameters",
-  "main": "dist/sharing.facebooktwitter.js",
+  "main": ["dist/sharing.facebooktwitter.js","dist/sharing.facebooktwitter.css"],
   "moduleType": [],
   "keywords": [
     "Sharing",

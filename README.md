@@ -4,6 +4,7 @@ Callback function on Facebook and Twitter
 ### If you dont have bower:
 ```sh
 $ npm install -g bower
+$ $ bower install facebooktwittersharing --save
 
 ```
 

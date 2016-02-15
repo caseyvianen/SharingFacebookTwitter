@@ -69,7 +69,7 @@ angular.module("sharing.facebooktwitter",[])
             urlink:'@url',
             facebookText: '@text',
             facebookPicture: '@picture',
-            callback: '&callback'
+            callback: '&callback',
             appId: '@id '
         },
         link: function(scope, element) {
