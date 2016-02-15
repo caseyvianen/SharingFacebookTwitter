@@ -70,7 +70,7 @@ angular.module("sharing.facebooktwitter",[])
             facebookText: '@text',
             facebookPicture: '@picture',
             callback: '&callback'
-            appId: '@id'
+            appId: '@id '
         },
         link: function(scope, element) {
             element[0].addEventListener('click', function(e) {
