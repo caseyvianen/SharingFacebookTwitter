@@ -1,3 +1,4 @@
+(function (){
 angular.module("Appshare",[])
 .directive('twitterButton', function() {
 
@@ -41,6 +42,7 @@ angular.module("Appshare",[])
       }
   }
 })
+
 
 .directive('facebookButton', function($q) {
 
@@ -108,4 +110,5 @@ return {
       }
   }
 })
-  
+
+})();
