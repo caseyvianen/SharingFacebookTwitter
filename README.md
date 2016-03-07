@@ -14,7 +14,7 @@ $ bower install facebooktwittersharing --save
 ```sh
   <twitter-button text=""  callback="callbackTwitter(response)" hastags="" urltext=""></twitter-button>
   <facebook-button url="" text="" picture="" callback="callbackFacebook(response)" id="" class="facebook-share">Share</facebook-button>
-  <div id="container"></div> this is because the share button needs to be creater somewhere.
+  <div id="container"></div> this is because the twitter share button needs to be creater somewhere.
 ```
 
 ###Last but not least you put the following code in youre head to define Angular and the Facebook API and the css file:
