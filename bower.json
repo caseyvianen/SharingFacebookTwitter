@@ -5,7 +5,7 @@
   ],
   "description": "Share twitter and Facebook with a callback function and given parameters",
   "main": ["dist/sharing.facebooktwitter.js","dist/sharing.facebooktwitter.css"],
-  "moduleType": [],
+ 
   "keywords": [
     "Sharing",
     "AngularJS",
@@ -21,8 +21,6 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "facebooktwittersharing": "*"
-  }
+  ]
+  
 }
