@@ -17,7 +17,7 @@ $ bower install facebooktwittersharing --save
   <div id="container"></div> this is because the twitter share button needs to be created somewhere.
 ```
 
-###Last but not least you put the following code in your head to define Angular and the Facebook API and the css file:
+###Last but not least you put the following code in your head to define Angular and the Facebook API and the Bower js and  css file:
 ```sh
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
 <script type="text/javascript" src="https://connect.facebook.net/en_US/sdk.js"></script>
